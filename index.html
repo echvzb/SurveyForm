@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Lenguaje de programación Encuesta</title>
+  </head>
+  <body>
+    <header class="container-title">
+      <h1 id="title">Solerom Software Encuesta.</h1>
+      <h2 id="description">
+        Gracias por tomar tiempo para ayudarnos a saber más de ti.
+      </h2>
+    </header>
+    <section class="container">
+      <form action="" id="survey-form">
+        <div class="space">
+          <label class="question" for="name" id="name-label">Nombre</label>
+          <br />
+          <input
+            class="txt-input in-txt"
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Escribe tu nombre"
+            required
+          />
+        </div>
+        <div class="space">
+          <label class="question" for="email" id="email-label"
+            >Correo electrónico</label
+          ><br />
+          <input
+            class="txt-input in-txt"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Escribe tu correo electrónico"
+            required
+          />
+        </div>
+        <div class="space">
+          <label class="question" for="number" id="number-label"
+            >Edad (Opcional)</label
+          ><br />
+          <input
+            class="txt-input in-txt"
+            type="number"
+            name=""
+            id="number"
+            placeholder="Edad"
+            min="10"
+            max="90"
+          />
+        </div>
+        <div class="space">
+          <label class="question" for="ocupacion">¿Cuál es tu ocupación?</label
+          ><br />
+          <select
+            name="ocupacion"
+            id="ocupacion"
+            placeholder="Selecciona tu ocupación"
+            class="in-txt"
+            required
+          >
+            <option value="" disabled selected>Selecciona una opción</option>
+            <option value="estudiante">Estudiante</option>
+            <option value="programador-full"
+              >Programador de tiempo completo</option
+            >
+            <option value="no-ment">Prefiero no mencionar</option>
+          </select>
+        </div>
+        <div class="space">
+          <label class="question" for="gustar">¿Te gusta la programación?</label
+          ><br />
+          <input
+            type="radio"
+            name="gustar"
+            id=""
+            value="definitivamente"
+            checked
+            class="space-box"
+          />Definitivamente<br />
+          <input type="radio" name="gustar" id="" value="tal-vez" />Tal vez<br />
+          <input type="radio" name="gustar" id="" value="no" />No
+        </div>
+        <div class="space">
+          <label class="question" for="tema"
+            >¿Qué lenguaje de programación prefieres?</label
+          ><br />
+          <select name="language" id="language" class="in-txt" required>
+            <option value="" disabled selected>Selecciona una opción</option>
+            <option value="python">Python</option>
+            <option value="javascript">Javascript</option>
+            <option value="java">Java</option>
+            <option value="cplusplus">C++</option>
+            <option value="csharp">C#</option>
+          </select>
+        </div>
+        <div class="space" id="check">
+          <label class="question"
+            >¿Qué tópico de la programación te apasiona?</label
+          ><br />
+          <label>
+            <input
+              type="checkbox"
+              name="mobile"
+              id="mobile"
+              class="check-box space-box"
+            />Dispositivos móviles </label
+          ><br />
+          <label>
+            <input
+              type="checkbox"
+              name="iot"
+              id="tema"
+              class="check-box"
+            />Internet de las cosas </label
+          ><br />
+          <input
+            type="checkbox"
+            name="data-science"
+            id="tema"
+            class="check-box"
+          />Ciencias de datos<br />
+          <input
+            type="checkbox"
+            name="ai"
+            id="tema"
+            class="check-box"
+          />Inteligencia artificial<br />
+          <input
+            type="checkbox"
+            name="web"
+            id="tema"
+            class="check-box"
+          />Desarrollo web
+        </div>
+        <div class="space">
+          <label class="question" for="comment"
+            >¿Algun comentario o sugerencia?</label
+          ><br />
+          <textarea
+            name="comment"
+            id="comment"
+            cols="30"
+            rows="5"
+            placeholder="Escribe tu comentario aquí..."
+            class="in-txt"
+          ></textarea>
+        </div>
+        <div class="space">
+          <input type="submit" value="Enviar" id="submit" class="sub-btn" />
+        </div>
+      </form>
+    </section>
+  </body>
+</html>
